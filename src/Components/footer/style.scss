@@ -1,0 +1,21 @@
+
+
+.footer {
+  background-color: $highlight;
+  width: 100%;
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright {
+  color: $light-text;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  &__highlite {
+    font-weight: bold;
+  }
+}

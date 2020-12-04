@@ -1,0 +1,59 @@
+.services {
+  display: flex;
+  justify-content: center;
+  &__grid{
+    display: grid;
+    grid-template-columns: 380px 380px 410px;
+  }
+  &__title {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    width: 410px;
+    height: 800px;
+    background: url(./images/services-bg.png) no-repeat 100%;
+  }
+  &__title-ico {
+    margin-top: 115px;
+    margin-bottom: 25px;
+  }
+}
+
+.service-item {
+  width: 380px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__title {
+    margin: 30px 0;
+    color: #665f60;
+  }
+}
+
+.service-item-design, .service-item-mob-dev {
+  background-color: #dbdbdb;
+}
+
+@media screen and (max-width: 960px) {
+  .services {
+    &__grid {
+      grid-template-columns: 380px  380px;
+    }
+    &__title {
+      grid-column-start: 2;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      width: 380px;
+      height: 800px;
+      background: url(./images/services-bg.png) no-repeat 100%;
+    }
+    &__title-ico {
+      margin-top: 115px;
+      margin-bottom: 25px;
+    }
+  }
+
+  
+}

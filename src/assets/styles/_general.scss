@@ -1,0 +1,145 @@
+@import './variable.scss' ; 
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@font-face {
+  font-family: ProximaNova;
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.eot);
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.eot?#iefix) format("embedded-opentype"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.woff2) format("woff2"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.woff) format("woff"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.ttf) format("truetype"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_1_0.svg#wf) format("svg");
+  font-weight: 300;
+  font-style: normal
+}
+
+@font-face {
+  font-family: ProximaNova;
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.eot);
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.eot?#iefix) format("embedded-opentype"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.woff2) format("woff2"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.woff) format("woff"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.ttf) format("truetype"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_4_0.svg#wf) format("svg");
+  font-weight: 400;
+  font-style: normal
+}
+
+@font-face {
+  font-family: ProximaNova;
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.eot);
+  src: url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.eot?#iefix) format("embedded-opentype"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.woff2) format("woff2"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.woff) format("woff"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.ttf) format("truetype"),url(https://d25purrcgqtc5w.cloudfront.net/dist/fonts/proximanova/302D42_5_0.svg#wf) format("svg");
+  font-weight: 700;
+  font-style: normal
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.body{
+  font-family: "ProximaNova", "serif";
+
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 1600px;
+  position: relative; 
+}
+
+.main-nav, .header, .about-us, .services, .footer {
+  padding: 0 215px;
+}
+
+.title-ext {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  &__text {
+    color: $light-text;
+    text-transform: uppercase;
+    font-size: 36px;
+  }
+}
+
+.quote {
+  margin-top: 100px;
+  color: $light-text;
+  width: 90%;
+  font-family: 'PT Sans', sans-serif;
+  font-style: italic;
+  font-size: 18px;
+  text-align: center;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.button {
+  width: 200px;
+  height: 50px;
+  border: solid 1px $dark-text;
+  background-color: transparent;
+  color: $dark-text;
+  font-family: 'PT Sans', sans-serif;
+  font-style: italic;
+  font-size: 20px;
+  &:hover{
+    background-color: $hover-color;
+    cursor: pointer;
+  }
+  &:active{
+    background-color: $active-color;
+  }
+}
+
+.marker {
+  border: solid 1px white;
+  border-radius: 50%;
+  background-color: transparent;
+  width: 10px;
+  height: 10px;
+}
+
+.slick-active .marker {
+  background-color: white;
+}
+
+.slide-arr {
+  color: $dark-text;
+  opacity: 50%;
+  font-size: 40px;
+  background-color: transparent;
+  border-width: 0;
+  z-index: 2;
+  position: absolute;
+  bottom: calc(50% - 20px);
+  cursor: pointer;
+  &:active {
+    background-color:$active-color;
+  }
+}
+
+.works-arr-prev {
+  color: $light-text;
+  left: -270px;
+}
+
+.works-arr-next {
+  color: $light-text;
+  right: -270px;
+}
+
+.team-arr-prev {
+  left: -30px;
+}
+
+.team-arr-next {
+  right: -30px;
+}
+
+@media screen and (max-width: $lg) {
+  .wrapper {
+    margin: 0 auto;
+    width: 100%;
+    position: relative; 
+  }
+  .main-nav, .header, .about-us, .services, .footer {
+    padding: 0;
+  }
+
+}

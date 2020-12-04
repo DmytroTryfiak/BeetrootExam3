@@ -1,0 +1,144 @@
+.map {
+  width: 100%;
+  height: 1000px;
+  position: absolute;
+  z-index: -2;
+}
+
+.contact {
+  position: relative;
+  width: 100%;
+  height: 1000px;
+  background-color: #9f9acf80;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title-ico {
+    margin-top: 55px;
+    margin-bottom: 25px;
+  }
+  &__title-text {
+    margin-bottom: 240px;
+  }
+}
+
+.form {
+  width: 860px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__inputs{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px; 
+  }
+  &__input{
+    box-sizing: border-box;
+    width: 415px;
+    height: 60px;
+    padding-left: 25px;
+    background-color: $bg-tr-color;
+    font-family: 'PT Sans', sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    border-width: 0;
+    &::placeholder {
+      color: $light-text;
+      opacity: 1;
+    }
+  }
+  &__textarea{
+    box-sizing: border-box;
+    padding: 25px;
+    width: 860px;
+    background-color: $bg-tr-color;
+    font-family: 'PT Sans', sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    max-height: 260px;
+    border-width: 0;
+    // resize: none;
+    &::placeholder {
+      color: $light-text;
+      opacity: 1;
+    }
+  }
+  &__button {
+    width: 300px;
+    height: 70px;
+    font-family: "ProximaNova", "serif";
+    font-style: normal;
+    font-size: 20px;
+    font-weight: bold;
+    color: $light-text;
+    text-transform: uppercase;
+    margin: 50px;
+    border: 2px solid $highlight;
+    background-color: $highlight;
+    letter-spacing: 0.02em
+  }
+}
+
+.slide-location{
+  top: 200px;
+}
+
+.slide-phone{
+  top: 300px;
+}
+
+.contact-slide {
+  position: absolute;
+  display: flex;
+  right: 0px;
+  &__ico-wrap{
+    width: 90px;
+    height: 90px;
+    background-color: $highlight;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  &__text-wrap{
+    transition: width 1s ease;
+    overflow: hidden;
+    display: flex;
+    width: 0;
+    height: 90px;
+    padding-top: 10px;
+    padding-top: 10px;
+    background-color: $bg-color;
+    color: $dark-text;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    text-align: center;
+  }
+  &__text{
+    box-sizing: border-box;
+    min-width: 290px;
+    padding: 5px 10px;
+  }
+  &:hover .contact-slide__text-wrap{
+    width: 290px;
+  }
+}
+
+.button-home {
+  position: absolute;
+  bottom: 70px;
+  right: 300px;
+  width: 90px;
+  height: 90px;
+  text-align: center;
+  font-size: 72px;
+  padding-top: 5px;
+  color: $light-text;
+  background-color: $highlight-tr;
+  border-width: 0;
+  &:hover{
+    cursor: pointer;
+  }
+}

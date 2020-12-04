@@ -1,0 +1,22 @@
+.header {
+  background: url(./images/header-bg.png) no-repeat;
+  height: 1070px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &__title {
+    font-size: 72px;
+    text-transform: uppercase;
+    color: $light-text;
+    text-align: center;
+  }
+  &__subtitle {
+    font-family: 'PT Sans', sans-serif;
+    font-style: italic;
+    font-size: 30px;
+    color: $light-text;
+    max-width: 720px;
+    text-align: center;
+  }
+}
