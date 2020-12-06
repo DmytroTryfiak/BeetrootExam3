@@ -28,7 +28,9 @@ function Works() {
     const settings = {
         dots: true,
         infinite: true,
-        speed: 500,
+        autoplay: true,
+        speed: 1000,
+        autoplaySpeed: 3000,
         slidesToShow: 1,
         slidesToScroll: 1,
         nextArrow: <SampleNextArrow className='slide-arr works-arr-next' />,
@@ -39,7 +41,15 @@ function Works() {
                     className="marker"
                     id={i}>
                 </div>
-            )
+            ),
+        responsive: [
+            {
+                breakpoint: 960,
+                settings: {
+                    arrows: false,
+                }
+            }
+        ]
 
     };
     return (
@@ -53,9 +63,9 @@ function Works() {
 
             <div className="works__slider">
                 <Slider {...settings}>
-                    <WorkItem src={img1} alt ='Image slide'/>
-                    <WorkItem src={img1} alt ='Image slide'/>
-                    <WorkItem src={img1} alt ='Image slide'/>
+                    <WorkItem src={img1} alt='Image slide' />
+                    <WorkItem src={img1} alt='Image slide' />
+                    <WorkItem src={img1} alt='Image slide' />
                 </Slider>
             </div>
 

@@ -9,7 +9,7 @@
     width: 730px;
   }
   &__button {
-    margin: 20px 0;
+    margin: 40px 0;
     color: $light-text;
     border-color: $light-text;
   }
@@ -27,5 +27,13 @@
     width: 100%;
     padding-top: 30px;
     padding-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: $lg) {
+  .works {
+    &__slider {
+      width: 500px;
+    }
   }
 }

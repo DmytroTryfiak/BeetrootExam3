@@ -36,7 +36,7 @@
   background-color: #dbdbdb;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: $lg) {
   .services {
     &__grid {
       grid-template-columns: 380px  380px;
@@ -54,6 +54,32 @@
       margin-bottom: 25px;
     }
   }
-
+  .service-item-mob-dev {
+    grid-row: 3;
+  }
   
 }
+
+@media screen and (max-width: 800px) {
+  .services {
+    &__grid {
+      grid-template-columns: 380px ;
+    }
+    &__title {
+      grid-column-start: 1;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      width: 380px;
+      height: 800px;
+      background: url(./images/services-bg.png) no-repeat 100%;
+    }
+    &__title-ico {
+      margin-top: 115px;
+      margin-bottom: 25px;
+    }
+  }
+  .service-item-mob-dev {
+    grid-row: 5;
+  }
+}
+

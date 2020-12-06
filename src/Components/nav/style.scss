@@ -4,22 +4,37 @@
   z-index: 1;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+
   align-items: center;
-  background-color: $highlight-tr;
+  background-color: #9f9acfB0;
+  &__button {
+    &_hide {
+      display: none; 
+    }
+  }
 }
 
 .nav {
+  transition: height 1s ease;
+  overflow: hidden;
   &__list{
     display: flex;
     list-style-type: none;
     color: $light-text;
+    text-align: center;
+    &_col{
+      flex-direction: column;
+      align-items: center;
+    }
   }
   &__item{
+    text-align: center;
     text-decoration: none;
-    padding: 20px;
+    padding: 10px 20px;
     color: $light-text;
     &:hover {
-     color: red;
+     color: darkmagenta;
     }
   }
   &__link{
@@ -28,11 +43,69 @@
     text-decoration: none;
     text-transform: uppercase;
   }
+  &_hide {
+    height: 0px;
+    flex-basis: 100%;
+  }
+  &_small {
+    flex-basis: 100%;
+    height: 340px;
+  }
 }
 
 .logo{
   width: 54px;
   height: 72px;
+  margin: 5px 20px;
+  box-sizing: content-box;
+}
+
+.menuButton__ico,
+.menuButton__ico::before,
+.menuButton__ico::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  transition-duration: .25s;
+}
+
+.menuButton {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin-right: 50px;
+  cursor: pointer;
+  z-index: 1;
+  &__ico::before {
+    content: '';
+    top: -8px;
+  }
+  &__ico::after {
+    content: '';
+    top: 8px;
+  }
+  &__ico {
+    &_active {
+      transform: rotate(45deg);
+      &::before{
+        top: 0;
+        transform: rotate(0);
+      }
+      &::after{
+        top: 0;
+        transform: rotate(90deg);
+      }
+    }
+    
+  }
+  &_hide{
+    display: none;
+  }
+
 }
 
 @media screen and (max-width: $lg) {

@@ -1,4 +1,3 @@
-import "./style.scss";
 import ico from './images/services-ico.png'
 import graphicDesign from './images/graphic-design-ico.png'
 import webDev from './images/web-dev-ico.png'
@@ -8,7 +7,7 @@ import mobileDev from './images/mobile-dev-ico.png'
 function Services() {
     return (
         <section className="services" id="services">
-            <div class="services__grid">
+            <div className="services__grid">
                 <div className="services__title title-ext">
                     <img className="services__title-ico title-ext__ico" src={ico}></img>
                     <h1 className="title-ext__text">

@@ -5,9 +5,6 @@ import img3 from './images/team-item-3.png'
 import Slider from "react-slick";
 import Social from '../social/social'
 
-
-
-
 function SampleNextArrow(props) {
     const { onClick } = props;
     return (
@@ -34,36 +31,40 @@ function Team() {
     const settings = {
         dots: false,
         infinite: true,
-        speed: 500,
+        autoplay: true,
+        speed: 1000,
+        autoplaySpeed: 3000,
         slidesToShow: 3,
         slidesToScroll: 1,
         nextArrow: <SampleNextArrow className='slide-arr works-arr-next' />,
         prevArrow: <SamplePrevArrow className='slide-arr works-arr-prev' />,
-              responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-            dots: true
-          }
-        },
-        {
-          breakpoint: 720,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          }
-        },
-        {
-          breakpoint: 960,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1
-          }
-        }
-      ]
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+
+                }
+            },
+            {
+                breakpoint: 720,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                }
+            },
+            {
+                breakpoint: 960,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    arrows: false,
+                }
+            }
+        ]
     };
     return (
         <section className="team" id="team">
@@ -98,7 +99,7 @@ function TeamItem({ src, alt, name, position }) {
                 <p className="team-item__position">
                     {position}
                 </p>
-                <Social classAux='team-item__social'/>
+                <Social classAux='team-item__social' />
             </div>
         </div>
     );
