@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/BeetrootExam3/static/css/main.14812584.chunk.css",
-    "main.js": "/BeetrootExam3/static/js/main.0115e110.chunk.js",
-    "main.js.map": "/BeetrootExam3/static/js/main.0115e110.chunk.js.map",
-    "runtime-main.js": "/BeetrootExam3/static/js/runtime-main.de2ad521.js",
-    "runtime-main.js.map": "/BeetrootExam3/static/js/runtime-main.de2ad521.js.map",
-    "static/js/2.6b01e8fe.chunk.js": "/BeetrootExam3/static/js/2.6b01e8fe.chunk.js",
-    "static/js/2.6b01e8fe.chunk.js.map": "/BeetrootExam3/static/js/2.6b01e8fe.chunk.js.map",
-    "static/js/3.7bf28598.chunk.js": "/BeetrootExam3/static/js/3.7bf28598.chunk.js",
-    "static/js/3.7bf28598.chunk.js.map": "/BeetrootExam3/static/js/3.7bf28598.chunk.js.map",
+    "main.css": "/BeetrootExam3/static/css/main.a9087adc.chunk.css",
+    "main.js": "/BeetrootExam3/static/js/main.ecb4742a.chunk.js",
+    "main.js.map": "/BeetrootExam3/static/js/main.ecb4742a.chunk.js.map",
+    "runtime-main.js": "/BeetrootExam3/static/js/runtime-main.174aab0c.js",
+    "runtime-main.js.map": "/BeetrootExam3/static/js/runtime-main.174aab0c.js.map",
+    "static/js/2.54d535f9.chunk.js": "/BeetrootExam3/static/js/2.54d535f9.chunk.js",
+    "static/js/2.54d535f9.chunk.js.map": "/BeetrootExam3/static/js/2.54d535f9.chunk.js.map",
+    "static/js/3.eb979a50.chunk.js": "/BeetrootExam3/static/js/3.eb979a50.chunk.js",
+    "static/js/3.eb979a50.chunk.js.map": "/BeetrootExam3/static/js/3.eb979a50.chunk.js.map",
     "index.html": "/BeetrootExam3/index.html",
-    "static/css/main.14812584.chunk.css.map": "/BeetrootExam3/static/css/main.14812584.chunk.css.map",
-    "static/js/2.6b01e8fe.chunk.js.LICENSE.txt": "/BeetrootExam3/static/js/2.6b01e8fe.chunk.js.LICENSE.txt",
-    "static/media/style.scss": "/BeetrootExam3/static/media/services-bg.0bf79735.png",
+    "static/css/main.a9087adc.chunk.css.map": "/BeetrootExam3/static/css/main.a9087adc.chunk.css.map",
+    "static/js/2.54d535f9.chunk.js.LICENSE.txt": "/BeetrootExam3/static/js/2.54d535f9.chunk.js.LICENSE.txt",
+    "static/media/style.scss": "/BeetrootExam3/static/media/about-us-bg.cbd89c1f.png",
     "static/media/App.scss": "/BeetrootExam3/static/media/works-bg.ec2527c2.png",
     "static/media/sprite.502b6d80.svg": "/BeetrootExam3/static/media/sprite.502b6d80.svg",
     "static/media/team-item-1.e43e3719.png": "/BeetrootExam3/static/media/team-item-1.e43e3719.png",
@@ -21,9 +21,9 @@
     "static/media/work-item.f09b2ecb.png": "/BeetrootExam3/static/media/work-item.f09b2ecb.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.de2ad521.js",
-    "static/js/2.6b01e8fe.chunk.js",
-    "static/css/main.14812584.chunk.css",
-    "static/js/main.0115e110.chunk.js"
+    "static/js/runtime-main.174aab0c.js",
+    "static/js/2.54d535f9.chunk.js",
+    "static/css/main.a9087adc.chunk.css",
+    "static/js/main.ecb4742a.chunk.js"
   ]
 }
